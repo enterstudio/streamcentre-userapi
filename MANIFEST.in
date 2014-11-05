@@ -1,0 +1,2 @@
+recursive-include userapiapp/templates *
+recursive-include userapiapp/static *
