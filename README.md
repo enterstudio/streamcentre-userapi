@@ -1,5 +1,5 @@
 User API for Stream Centre
 
-[Как развернуть](how-to-setup)
+[Как развернуть](doc/how-to-setup)
 
-[API](api)
+[API](doc/api)
