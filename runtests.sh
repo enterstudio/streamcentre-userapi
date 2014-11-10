@@ -1,4 +1,4 @@
 #!/bin/sh
 # run all tests
 
-python -m tests/app_test
+python -m tests.app_test
