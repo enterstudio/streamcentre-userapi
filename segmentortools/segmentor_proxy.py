@@ -10,9 +10,9 @@ import segmentor_mock
 class SegmentorProxy(object):
     def __init__(self, config):
         self.use_mock = config['USE_SEGMENTOR_MOCK']
-        self.start_url = config['SEGMENTOR_URL_START']
-        self.stop_url = config['SEGMENTOR_URL_STOP']
-        self.status_url = config['SEGMENTOR_URL_STATUS']
+        self.start_url = os.path.join(config['SEGMENTOR_URL'], 'start_rec/{0}')
+        self.stop_url = os.path.join(config['SEGMENTOR_URL'], 'stop_rec/{0}')
+        self.status_url = os.path.join(config['SEGMENTOR_URL'], 'get_state/{0}')
 
 
     @httpretty.activate

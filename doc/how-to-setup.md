@@ -1,5 +1,5 @@
 # Что нужно поставить
-* Python 2.7+
+* Python 2.*
 * ffmpeg
 * virtualenv
 
@@ -77,12 +77,8 @@ server {
 DEBUG = False
 DATABASE_URI = 'sqlite:////path_to_database.db'
 
-STORAGE_URL_INFO = 'http://урл_для_получения_метаинформации_из_хранилища'
-STORAGE_URL_CLIP = 'http://урл_для_скачивания_фрагментов_видео/'
-
-SEGMENTOR_URL_START = 'http://урл_для_старта_записи_видео/'
-SEGMENTOR_URL_STOP = 'http://урл_для_остановки_записи_видео/'
-SEGMENTOR_URL_STATUS = 'http://урл_для_получения_статуса_видео/'
+STORAGE_URL = 'http://урл_хранилища'
+SEGMENTOR_URL = 'http://урл_сегментора/'
 
 TEMP_FOLDER = '/tmp/videos/'
 RESULT_CLIPS_FOLDER = '/data/videos/'

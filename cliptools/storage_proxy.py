@@ -9,8 +9,10 @@ import storage_mock
 class StorageProxy(object):
     def __init__(self, config):
         self.use_mock = config['USE_STORAGE_MOCK']
-        self.info_url = config['STORAGE_URL_INFO']
-        self.clip_url = config['STORAGE_URL_CLIP']
+        self.info_url = os.path.join(config['STORAGE_URL'], 'info')
+        self.clip_url = os.path.join(config['STORAGE_URL'], 'clip/{0}')
+        print self.info_url
+        print self.clip_url
 
     @httpretty.activate
     def get_clips_info(self, stream_id, start_stamp, stop_stamp):
